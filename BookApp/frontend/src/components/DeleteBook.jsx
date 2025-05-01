@@ -11,7 +11,9 @@ const DeleteBook = () => {
 
   const fetchBooks = async () => {
     try {
-      const res = await axios.get("https://book-app-31ms.onrender.com/books");
+      const res = await axios.get(
+        "https://fsd-backend-7-el9b.onrender.com/books"
+      );
       setBooks(res.data);
     } catch (error) {
       console.error(error);

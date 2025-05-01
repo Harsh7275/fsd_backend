@@ -11,7 +11,9 @@ const ViewBook = () => {
 
   const handleView = async () => {
     try {
-      const res = await axios.get("https://book-app-31ms.onrender.com/books");
+      const res = await axios.get(
+        "https://fsd-backend-7-el9b.onrender.com/books"
+      );
       setBooks(res.data);
     } catch (err) {
       console.log(err);
